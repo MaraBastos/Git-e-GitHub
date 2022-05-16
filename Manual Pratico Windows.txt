@@ -1,0 +1,422 @@
+# Guia Prático Git e GitHub para iniciantes
+
+## Windows
+
+
+
+- Introdução
+
+1 – Definição de GIT e Objetivo
+
+2 – Definição de GITHUB e Objetivo
+
+3 –  Instalação e Configuração do Git e GitHub
+
+4 – Comandos Básicos do GIT para Windows
+
+5 – GIT e GITHUB na prática
+
+ 
+
+- Introdução
+
+
+ Vamos apresentar nesse e-book um guia prático sobre GIT e GITHUB para facilitar o estudo de quem está iniciando na carreira de programador de sistemas ou desenvolvimento de softwares. Esperamos contribuir com o aprendizado e levar seu conhecimento a um patamar elevado de forma simples e prática. Como requisitos para utilizar Git e GitHub, primeiramente atualize o JAVA no seu sistema (eu penei até descobrir que meu problema era falta de atualização do Java 😊!! Vamos lá!!
+
+1 – GIT
+
+1.1 -  Definição de Git
+
+Git é um sistema de controle de versão (VCS) usados por desenvolvedores de softwares para rastrear e controlar alterações no código-fonte, arquivos de configuração e documentação durante o processo de criação de um projeto. 
+
+1.2 – O Git objetiva acompanhar o versionamento do projeto e tem como objetivo possibilitar correções, sendo possível reverter para versão anterior em caso de erro, principalmente quando o projeto é desenvolvido em equipe. O GIT armazena todo o histórico de alterações em um banco de dados chamado “Repositório”. Nesse repositório todos os arquivos são armazenados de forma segura. O Git cria também um subdiretório que armazena o histórico do projeto. Ao finalizar cada parte de um projeto, este dará como resultado um COMMIT, que ficará gravado e será acessado sempre que o projeto for reiniciado para alterações ou correções. Dessa forma, os devs poderão achar com facilidade qual versionamento corresponde cada alteração, a medida que quando essas informações são salvas elas possuem um nome que identifica exatamente o tipo de alteração ocorrida.
+
+2 – GitHub
+
+2.1 – Definição de GitHub
+
+O GitHub é um servidor onde os projetos são armazenados em um repositório, porém é um SERVIDOR REMOTO, possibilitando acesso de outros interessados, como membros da equipe ou estudantes. É uma plataforma gratuita para uso em projetos de código aberto. Essa plataforma ganhou visibilidade em 2013, quando atingiu 10 milhões de repositórios. Atualmente, acredita-se que todos os desenvolvedores possuem um espaço no GitHub para mostrar o seu trabalho e possibilita a interação com outros desenvolvedores, empresas e estudantes, pois se assemelha a uma rede social, porém com um grupo específico – os devs!!
+
+2.2 – Objetivo do GitHub
+
+O objetivo do GitHub é servir de repositório remoto para os projetos e facilitar o controle do versionamento, uma vez que o projeto poderá ser manipulado por diversos desenvolvedores. A plataforma GitHub, por ser composta por desenvolvedores, possibilita o conhecimento, desenvolvimento, troca de informações, parceiras e também como base para recrutamento por grandes empresas. Então, se você é um Desenvolvedor ou está pensando em ser, Git e GitHub serão seus tutores! E como o GitHub se liga ao Git? O desenvolvedor “joga” os  COIMMITs do Git, por meio de determinados comandos, ao GitHub que guardará o projeto e cada alteração será versionada.
+
+ 
+
+3 – Instalação E Configuração do Git  e GitHub no Windows
+
+ 
+
+3.1 - Instalação E Configuração do Git no Windows
+
+Primeiramente, vamos conhecer como surgiu o Git. Os desenvolvedores do Linux projetaram o Git, que vem instalado no Linux e Mac OSX, porém alguns desenvolvedores descontentes com algumas funcionalidades, desenvolveram o Projeto de Código Aberto Git para Windows, daí alguns comandos serem diferentes entre os sistemas operacionais, inclusive instalação e configuração. Dessa forma, oportunizaram que as funcionalidades do Git pudessem ser aproveitadas em Windows. Para configurar o Git no Windows vamos utilizar o Git Bash, que simula o ambiente Linux no Windows, além de outras configurações específicas que veremos no decorrer dos estudos.
+
+Em seguida, faremos as configurações no GitHub para hospedar o seu primeiro repositório e conectar o Git ao GitHub, de forma a lhe assegurar seu primeiro projeto de desenvolvedor!
+
+1º. Instale o Git para Windows, seguindo as configurações do seu sistema, no seguinte site : https://git-for-windows.github.io/
+
+2º. Quando o download estiver concluído, execute o instalador, podendo ser especificado, nesse momento, o local de instalação. Recomendo criar um ícone na área de trabalho. Certifique-se de selecionar a opção “Use Git from Bash Only”, uma vez que é o que vamos utilizar no decorrer dos estudos. Também recomendo que crie um ícone do Git Bash na pares de trabalho, mas poderá ser utilizado o comando por meio do iniciar do Windows. 
+
+Destaco que o Git é diferente do GitHub, sendo a maior diferença o local de repositório, onde no Git é local e no GitHub é remoto, logo, este é acessível ao público e possui as seguintes vantagens:
+
+\1.    Controle de Versão;
+
+\2.    Armazenamento na Nuvem;
+
+\3.    Trabalho em Equipe;
+
+\4.    Melhorar seu Código; e
+
+\5.    Reconhecimento.
+
+ 
+
+3.2 - Instalação E Configuração do GitHub no Windows
+
+O GitHub é uma plataforma e deverá ser acessada e criada uma conta no site https://github.com. Oriento que utilize o mesmo e-mail no GitHub e em todos os repositórios criados no Git!... Não se preocupe nesse momento em entender esse passo, apenas use o mesmo e-mail ok?? Agora vamos efetivamente iniciar o projeto!!
+
+4 - Comandos Básicos do Git para Windows
+
+Para compreender os comandos básicos para o Git, vamos utilizar um artigo muito simples encontrado no link https://www.codigofonte.com.br/artigos/top-25-comandos-do-git
+
+ 
+
+### 1. git config
+
+Quando você está utilizando o Git pela primeira vez ou com uma instalação nova, em um projeto colaborativo, esse comando é fundamental para configurar sua identidade de usuário, inserindo informações como nome e email que serão empregadas em cada *commit*.
+
+Exemplo:
+
+**$ git config –global user.name “Seu nome”**
+
+**$ git config –global user.email “Seu email”**
+
+### 2. git init
+
+Esse é o comando que você irá utilizar para criar um novo projeto de git. O comando irá criar um repositório novo em branco e, a partir daí, será possível armazenar seu código fonte, alterar, salvaguardar alterações etc.
+
+Exemplo:
+
+**$ git init**
+
+Se você já possui um repositório anterior ou deseja criar um repositório com um nome em específico, você pode passar o nome como parâmetro do comando:
+
+**$ git init <O nome do seu repositório>**
+
+### 3. git clone
+
+Esse comando Git cria uma cópia exata de um repositório já existente.
+
+Então… quando usar git init e quando usar git clone? O git clone é mais avançado, uma vez que ele mesmo executa um comando git init internamente. Além disso, ele verifica todo o conteúdo do projeto.
+
+Exemplo:
+
+**git clone <URL do seu projeto>**
+
+### 4. git add
+
+[                                                    ](https://codigofonte.com.br/wp-content/uploads/2021/08/git-03.jpg)
+
+Esse comando Git adiciona os arquivos especificados de código ao seu repositório, sejam arquivos novos ou arquivos anteriores que foram alterados. Oferece diferentes possibilidades de sintaxe.
+
+Exemplo:
+
+**$ git add seu_arquivo** (esse comando irá adicionar o arquivo em específico ao repositório)
+
+**$ git add \*** (esse comando irá adicionar todos os arquivos novos e/ou modificados ao repositório)
+
+### 5. git commit
+
+É fundamental se estabelecer uma diferença entre git add e git commit:
+
+- git add     adiciona seus arquivos modificados à fila para serem submetidos a um     commit posteriormente. Os arquivos **não** passaram por um commit.
+- O git     commit executa o commit dos arquivos que foram adicionados e cria uma nova     revisão com um log. Por outro lado, se você não adicionar nenhum arquivo,     o git não fará o commit de nada.
+
+É possível combinar as duas ações em um único comando: **$ git commit -a**.
+
+Também é possível adicionar uma mensagem para a execução de um commit. Exemplo:
+
+**$ git commit -m “seu comentário”**
+
+### 6. git branch
+
+É comum na maior parte do tempo possuir múltiplas variações em seu repositório Git, chamadas de *branches* (“ramificações”). A grosso modo, um *branch* é um caminho independente de desenvolvimento, uma alternativa.
+
+A princípio pode parecer fácil se perder em diversos caminhos, mas o comando git branch facilita o gerenciamento de tudo isso. Com diferentes parâmetros, é possível listar, criar ou apagar os *branches.*
+
+Exemplos:
+
+**$ git branch** (lista todas as ramificações)
+
+**$ git branch <nome_do_branch>** (cria um *branch* com o nome especificado)
+
+**$ git branch -d <nome_do_branch>** (deleta o *branch* com o nome especificado)
+
+### 7. git checkout
+
+Ainda sobre *branches*, esse comando Git pode ser utilizado para trocar de uma ramificação para outra.
+
+Exemplo:
+
+**$ git checkout <nome_do_branch>**
+
+Também é possível combinar operações, criando e fazendo o checkout de um novo *branch* com um único comando:
+
+**$ git checkout -b <nome_do_branch_novo>**
+
+## Comandos Git intermediários
+
+### 8. git remote
+
+O comando Git remote estabelece uma conexão entre seu repositório local e um repositório remoto.
+
+Exemplo:
+
+**$ git remote add <nomecurto> <url>**
+
+### 9. git push
+
+[     ](https://codigofonte.com.br/wp-content/uploads/2021/08/git-04.jpg)
+
+Esse comando serve para subir suas modificações para um repositório **remoto** conectado anteriormente com git remote.
+
+Exemplo:
+
+**$ git push -u <nome_curto> <nome_do_branch>**
+
+É importante especificar a origem e o *upstream* antes de usar o git push. Veja o exemplo:
+
+**$ git push –set-upstream <nome_curto> <nome_do_branch>**
+
+### 10. git fetch
+
+Quando você precisa baixar as mudanças criadas por outros membros do seu projeto colaborativo, você precisa do comando Git fetch. A partir desse comando, você irá receber todas as informações de commits, para avaliar, antes de aplicar essas alterações na sua versão local do repositório.
+
+Exemplo:
+
+**$ git fetch**
+
+### 11. git pull
+
+O comando Git pull baixa o conteúdo (não os metadados) do que foi alterado no repositório remoto para o seu repositório local e imediatamente atualiza seu contreúdo para a última versão.
+
+Exemplo:
+
+**$ git pull <URL>**
+
+### 12. git stash
+
+[     ](https://codigofonte.com.br/wp-content/uploads/2021/08/git-02.jpg)
+
+Esse comando Git armazena temporariamente seus arquivos modificados em uma área chamada *stash* (“esconderijo”), sem interagir com os outros arquivos até ser necessário.
+
+Exemplo:
+
+**$ git stash**
+
+Para listar todos os seus “esconderijos”, usamos:
+
+**$ git stash list**
+
+Quando for o momento de aplicar o conteúdo do *stash* a um *branch*, usamos o parâmetro “apply”:
+
+**$ git stash apply**
+
+### 13. git show
+
+Quer detalhes específicos sobre um commit que o log não mostra? O comando Git show é a resposta.
+
+Exemplo:
+
+**$ git show <hash_do_commit>**
+
+### 14. git rm
+
+Para remover arquivos da sua pasta, você pode utilizar o comando Git rm.
+
+Exemplo:
+
+**$ git rm <nome_do_arquivo>**
+
+### 15. git help
+
+Existem inúmeros comandos no Git, muito mais do que os 25 dessa lista, cada um com sua função, parâmetros e características. Felizmente, o próprio Git tem o comando help para trazer ajuda diretamente no terminal.
+
+Exemplo:
+
+**$ git help <comando que se tem dúvida>**
+
+### 16. git merge
+
+[     ](https://codigofonte.com.br/wp-content/uploads/2021/08/git-05.jpg)
+
+Esse comando Git integra as mudanças de dois *branches* diferentes em um único *branch*. Ele precisa ser iniciado a partir de um *branch* já selecionado, que será mesclado com outro, com o nome passado por parâmetro.
+
+Exemplo:
+
+**$ git merge <nome_do_branch>**
+
+## Comandos Git avançados
+
+### 17. git rebase
+
+Git rebase a princípio parece fazer o mesmo que um comando git merge: ele integra dois *branches* em um *branch* único. Porém, esse comando refaz o histórico de commits, tornando-o linear. É o mais indicado para consolidar múltiplos *branches*.
+
+Exemplo:
+
+**$ git rebase <base>**
+
+### 18. git pull –rebase
+
+Essa é uma variação do comando pull mostrado anteriormente. A partir dessa instrução, o Git irá fazer um rebase (não um merge) depois de se utilizar um comando pull.
+
+Exemplo:
+
+**$ git pull –rebase**
+
+### 19. git cherry-pick
+
+Esse é um comando poderoso que permite selecionar qualquer commit específico de um *brach* e aplicá-lo a outro *branch*, sem precisar de uma mescla completa. A operação fica adicionada no histórico.
+
+Exemplo:
+
+**$ git cherry-pick <commit-hash>**
+
+### 20. git archive
+
+[     ](https://codigofonte.com.br/wp-content/uploads/2021/08/git-01.jpg)
+
+Esse comando Git combina múltiplos arquivos em um único arquivo, como se fosse um arquivo zipado. Esse pacote pode ser aberto depois e os arquivos contidos podem ser extraídos individualmente.
+
+Exemplo:
+
+**$ git archive –format zip HEAD > archive-HEAD.zip**
+
+### 21. git blame
+
+O comando “dedo-duro”, blame ajuda a determinar qual usuário realizou qual mudança em um determinado arquivo.
+
+Exemplo:
+
+**$ git blame <nome_do_arquivo>**
+
+### 22. git tag
+
+Tags são uma boa opção para marcar uma *branch* e evitar alteração, principalmente em releases públicos.
+
+Exemplo:
+
+**$ git tag -a v1.0.0**
+
+### 23. git diff
+
+Para comparar dois arquivos gits ou dois *branches* **antes** de passarem por um commit ou um push, é importante executar esse comando Git.
+
+Exemplos:
+
+\1.   comparando o repositório ativo com o repositório local: **$ git diff HEAD <nome_do_arquivo>**
+
+\2.   comparando duas ramificações: **$ git diff <***branch* **de origem> <***branch* **de destino>**
+
+### 24. git citool
+
+Esse comando Git oferece uma alternativa gráfica ao commit.
+
+Exemplo:
+
+**$ git citool**
+
+### 25. git whatchanged
+
+Esse comando oferece informações de log, mas em formato raw.
+
+Exemplo:
+
+**$ git whatchanged**
+
+Tags:
+
+·     [Git](https://www.codigofonte.com.br/tag/git)
+
+ 
+
+5 – GIT e GITHUB na prática
+
+E agora vamos criar nosso repositório... é hora da prática!! E o que vamos fazer? Nesse momento você já deverá ter instalado o GIT e também atualizado o JAVA (😊)
+
+\1)   Iniciar O GIT;
+
+\2)   Iniciar o Versionamento; e 
+
+\3)   Criar um Commit
+
+\4)   Transferir esse Commit para o GitHub
+
+Vamos utilizar os comandos: GIT INIT, GIT ADD E GIT COMMIT
+
+\1)   Criando um repositório
+
+Vamos criar um repositório no nosso PC. Sugerimos criar a pasta WORSKPACE no Diretório C
+
+ 
+
+Sobre a pasta WORKSPACE, clique com o botão direito de mouse em “GIT BASH HERE”
+
+ 
+
+ 
+
+Abrindo o GIT BASH, você deverá dar, sequenciadamente, os seguintes comandos
+
+mkdir – GIT-e-GITHUB
+
+cd GIT-e-GITHUB
+
+git init
+
+o resultado deve ser esse:
+
+ 
+
+E como ter certeza que a pasta foi criada?
+
+Siga o comando ls -a e resulta na tela abaixo, que mostra que dentro da pasta workspace foi gerada outra pasta e inclusive a .git 
+
+ 
+
+ 
+
+OBS.:
+
+Antes de mais nada precisamos criar o seu login no GIT, assim digite:
+
+git config –global user.email “ o seu e-mail de uso para o projeto” ENTER
+
+git config –global user.name SEUNOMEDEUSUARIO (no meu caso usei MARAGFTJAVA)
+
+e tem que resultar na tela abaixo
+
+ 
+
+Para gerar nosso repositório com mais facilidade, vamos utilizar uma linguagem marckdown, que é uma forma mais humana de usar uma linguagem HTML. Assim, você pode usar o TYPORA, que é um aplicativo que vai permitir você criar arquivos em .md, disponível para download no link https://typora.br.uptodown.com/windows/download
+
+Feito download, dentro da pasta GIT-e-GITHUB, crie um ARQUIVO com o nome “GIT e GITHUB - Guia Prático para iniciantes – WINDOWS” com a extensão md (Ou seja, no TYPORA)
+
+Fazendo COMMIT
+
+git add *
+
+ 
+
+git commit -m “commit inicial”
+
+Geramos nosso 1º. COMMIT
+
+ 
+
+Comando ls vai ajudar a mostrar os arquivos no DIR e o comando git status mostra informações sobre o arquivo
+
+ 
+
+O Projeto se inicia no WORKING DIRECTORY, ou seja, no diretório de trabalho dentro do seu sistema operacional. Cada etapa finalizada vai para o STAGE AREA e depois comitar os arquivos, conforme os seguintes comandos
+
